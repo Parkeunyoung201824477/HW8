@@ -1,10 +1,10 @@
-CC=gcc
-CFLAGS= -Wall -g
-OBJS = hw7Main.c register7.o print7.o search7.o delete7.o sort7.o 
-main_7 : $(OBJS)
-	$(CC) -o main_7 $(OBJS)
+CC = gcc
+CFLAGS = -Wall -g
+OBJS = hw8Main.c register8.o print8.o search8.o delete8.o sort8.o
+main8 : $(OBJS)
+	$(CC) -o main8 $(OBJS)
 %.o : %.c
 	$(CC) -c -o $@ $(CFLAGS) $<
 clean:
-	rm *.o main_7
-
+	rm *.o main8
+ 
